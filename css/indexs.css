@@ -1,0 +1,179 @@
+/* General styling */
+body {
+    background-color: #121212; /* Warna latar belakang */
+    color: #ffffff; /* Warna teks */
+}
+
+.container {
+    margin-top: 20px; /* Margin atas */
+}
+
+.text-warning {
+    color: #f0ad4e !important; /* Warna teks peringatan dengan prioritas tinggi */
+}
+
+/* Manga list box styling */
+.manga-list-box {
+    background-color: #1c1c1c; /* Warna latar belakang */
+    padding: 15px; /* Padding dalam */
+    border-radius: 5px; /* Membulatkan sudut */
+    border: 1px solid #f0ad4e; /* Border warna kuning */
+}
+
+/* Manga card styling */
+.manga-card {
+    margin-bottom: 20px; /* Margin bawah */
+    background-color: #1c1c1c; /* Warna latar belakang */
+    color: #ffffff; /* Warna teks */
+    border: 1px solid #f0ad4e; /* Border warna kuning */
+    border-radius: 5px; /* Membulatkan sudut */
+    overflow: hidden; /* Menghilangkan overflow */
+    width: 180px; /* Lebar tetap */
+    height: 280px; /* Tinggi tetap */
+    display: flex; /* Flexbox untuk tata letak */
+    flex-direction: column; /* Flex arah kolom */
+    align-items: center; /* Pusatkan konten secara horizontal */
+}
+
+.manga-card img {
+    width: 100%; /* Lebar 100% */
+    height: 220px; /* Tinggi tetap */
+    object-fit: cover; /* Mengatur gambar agar menutupi area tanpa distorsi */
+}
+
+.manga-card .card-body {
+    padding: 10px; /* Padding dalam */
+    text-align: center; /* Teks rata tengah */
+    flex: 1; /* Ambil ruang sisa */
+    display: flex; /* Flexbox untuk tata letak */
+    flex-direction: column; /* Flex arah kolom */
+    justify-content: space-between; /* Atur ruang antara elemen */
+}
+
+.manga-card .card-title {
+    color: #f0ad4e; /* Warna kuning */
+    font-size: 1em; /* Ukuran font */
+    margin-bottom: 5px; /* Margin bawah */
+}
+
+.manga-card .card-genre,
+.manga-card .card-text {
+    font-size: 0.8em; /* Ukuran font lebih kecil */
+    margin-bottom: 5px; /* Margin bawah */
+}
+
+.btn {
+    background-color: #f0ad4e; /* Warna latar belakang kuning */
+    color: #000; /* Warna teks hitam */
+}
+
+.btn:hover {
+    background-color: #ec971f; /* Warna latar belakang lebih gelap saat dihover */
+}
+
+.sidebar {
+    background-color: #1c1c1c; /* Warna latar belakang */
+    padding: 15px; /* Padding dalam */
+    border-radius: 5px; /* Membulatkan sudut */
+    border: 1px solid #f0ad4e; /* Border warna kuning */
+}
+
+.search-bar form {
+    display: flex; /* Flexbox untuk tata letak */
+}
+
+.search-bar input {
+    width: calc(100% - 60px); /* Lebar kalkulatif */
+    padding: 5px; /* Padding dalam */
+    border: 1px solid #f0ad4e; /* Border warna kuning */
+    border-radius: 3px 0 0 3px; /* Membulatkan sudut */
+    background-color: #1c1c1c; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+}
+
+.search-bar button {
+    padding: 5px 10px; /* Padding dalam */
+    border: none; /* Tanpa border */
+    border-radius: 0 3px 3px 0; /* Membulatkan sudut */
+    background-color: #f0ad4e; /* Warna latar belakang kuning */
+    color: #000; /* Warna teks hitam */
+    cursor: pointer; /* Menampilkan pointer saat dihover */
+}
+
+.genre-filter {
+    display: flex; /* Flexbox untuk tata letak */
+    flex-direction: column; /* Flex arah kolom */
+}
+
+.genre-filter h3 {
+    margin-bottom: 10px; /* Margin bawah */
+}
+
+.genre-list {
+    display: flex; /* Flexbox untuk tata letak */
+    flex-direction: column; /* Flex arah kolom */
+}
+
+.genre-filter label,
+.genre-list .form-check {
+    color: #fff; /* Warna teks */
+}
+
+/* Chapter box styling */
+.chapter-list {
+    margin-top: 20px; /* Margin atas */
+}
+
+.chapter-box {
+    max-height: 300px; /* Tinggi maksimal */
+    overflow-y: auto; /* Overflow scroll vertikal */
+    padding: 10px; /* Padding dalam */
+    border: 1px solid #f0ad4e; /* Border warna kuning */
+    border-radius: 5px; /* Membulatkan sudut */
+    background-color: #1c1c1c; /* Warna latar belakang */
+}
+
+.chapter-box a {
+    color: #f0ad4e; /* Warna teks kuning */
+    text-decoration: none; /* Menghilangkan garis bawah teks */
+}
+
+.chapter-box a:hover {
+    color: #ffffff; /* Warna teks putih saat dihover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .manga-card {
+        width: 100%; /* Lebar penuh */
+        height: auto; /* Tinggi otomatis */
+    }
+    
+    .manga-card img {
+        height: auto; /* Tinggi otomatis */
+    }
+    
+    .sidebar {
+        margin-top: 20px; /* Margin atas */
+    }
+    
+    .search-bar input {
+        width: calc(100% - 70px); /* Lebar kalkulatif untuk layar kecil */
+    }
+
+    .search-bar,
+    .genre-filter {
+        width: 100%; /* Lebar penuh */
+        margin-bottom: 20px; /* Margin bawah */
+    }
+
+    .manga-list-box {
+        display: flex; /* Flexbox untuk tata letak */
+        flex-direction: column; /* Flex arah kolom */
+    }
+
+    .manga-list {
+        display: flex; /* Flexbox untuk tata letak */
+        flex-wrap: wrap; /* Membungkus elemen flex */
+    }
+}

@@ -1,0 +1,197 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif; /* Mengatur font menjadi Arial atau sans-serif */
+    background-color: #17161f; /* Latar belakang berwarna gelap */
+    margin: 0; /* Menghapus margin default */
+    padding: 0; /* Menghapus padding default */
+    color: #ffffff; /* Warna teks putih */
+}
+
+.wrapper {
+    display: flex; /* Menggunakan flexbox untuk layout fleksibel */
+    align-items: stretch; /* Elemen di dalam flexbox akan meregang sesuai tinggi kontainer */
+}
+
+.col-md-12 {
+    color: #ffffff; /* Warna teks putih */
+}
+
+#sidebar {
+    min-width: 250px; /* Lebar minimum sidebar */
+    max-width: 250px; /* Lebar maksimum sidebar */
+    min-height: 100vh; /* Tinggi minimum sidebar sama dengan tinggi viewport */
+    background: #343a40; /* Latar belakang sidebar berwarna abu-abu gelap */
+    color: #fff; /* Warna teks putih */
+    transition: all 0.3s; /* Efek transisi selama 0.3 detik */
+}
+
+#sidebar.active {
+    margin-left: -250px; /* Sidebar akan tersembunyi ke kiri saat aktif */
+}
+
+#sidebar .sidebar-header {
+    padding: 20px; /* Padding untuk header sidebar */
+    background: #343a40; /* Latar belakang header sidebar berwarna abu-abu gelap */
+}
+
+#sidebar ul.components {
+    padding: 20px 0; /* Padding untuk komponen dalam ul */
+}
+
+#sidebar ul p {
+    color: #fff; /* Warna teks putih */
+    padding: 10px; /* Padding untuk paragraf dalam ul */
+}
+
+#sidebar ul li a {
+    padding: 10px; /* Padding untuk link dalam li */
+    font-size: 1.1em; /* Ukuran font 1.1em */
+    display: block; /* Menampilkan link sebagai blok */
+    color: #808080; /* Warna teks link abu-abu saat tidak diarahkan oleh kursor */
+}
+
+#sidebar ul li a:hover {
+    background: #7386d5; /* Latar belakang berwarna biru saat diarahkan oleh kursor */
+    color: #fff; /* Warna teks putih saat diarahkan oleh kursor */
+}
+
+#sidebar ul li.active > a {
+    background: #6d7fcc; /* Latar belakang biru saat link aktif */
+    color: #fff; /* Warna teks putih saat link aktif */
+}
+
+#content {
+    width: 100%; /* Lebar konten 100% */
+    padding: 20px; /* Padding 20px untuk konten */
+    transition: all 0.3s; /* Efek transisi selama 0.3 detik */
+}
+
+.navbar {
+    padding: 15px 10px; /* Padding untuk navbar */
+    background: #292929; /* Latar belakang navbar berwarna abu-abu gelap */
+    border: none; /* Menghapus border */
+    border-radius: 0; /* Menghapus border radius */
+    margin-bottom: 10px; /* Margin bawah 10px */
+}
+
+.navbar-btn {
+    box-shadow: none; /* Menghapus bayangan pada tombol navbar */
+    outline: none !important; /* Menghapus outline pada tombol navbar */
+    border: none; /* Menghapus border pada tombol navbar */
+}
+
+#sidebarCollapse {
+    width: 40px; /* Lebar tombol sidebarCollapse */
+    height: 40px; /* Tinggi tombol sidebarCollapse */
+    background: #ffffff; /* Latar belakang tombol sidebarCollapse berwarna putih */
+    color: #343a40; /* Warna teks tombol sidebarCollapse berwarna abu-abu gelap */
+    cursor: pointer; /* Mengubah kursor menjadi pointer */
+    transition: all 0.3s; /* Efek transisi selama 0.3 detik */
+}
+
+#sidebarCollapse i {
+    color: #343a40 !important; /* Warna ikon abu-abu gelap */
+}
+
+#sidebarCollapse:hover i {
+    color: #ffffff !important; /* Warna ikon putih saat diarahkan oleh kursor */
+}
+
+#sidebarCollapse span {
+    width: 80%; /* Lebar span 80% */
+    height: 2px; /* Tinggi span 2px */
+    margin: 0 auto; /* Margin otomatis */
+    display: block; /* Menampilkan span sebagai blok */
+    background: #343a40; /* Warna latar belakang span abu-abu gelap */
+    transition: all 0.3s; /* Efek transisi selama 0.3 detik */
+}
+
+#sidebarCollapse span:first-of-type {
+    margin-top: 10px; /* Margin atas 10px untuk span pertama */
+}
+
+#sidebarCollapse span:last-of-type {
+    margin-bottom: 10px; /* Margin bawah 10px untuk span terakhir */
+}
+
+#sidebarCollapse:hover {
+    background: #343a40; /* Latar belakang abu-abu gelap saat diarahkan oleh kursor */
+    color: #ffffff; /* Warna teks putih saat diarahkan oleh kursor */
+}
+
+#sidebarCollapse:hover span {
+    background: #343a40; /* Warna latar belakang span abu-abu gelap saat diarahkan oleh kursor */
+}
+
+/* Custom styling for form */
+.card {
+    color: #000000; /* Warna teks hitam untuk card */
+    border-radius: 15px; /* Border radius 15px untuk card */
+}
+
+.card-header {
+    border-top-left-radius: 15px; /* Border radius 15px untuk pojok kiri atas header card */
+    border-top-right-radius: 15px; /* Border radius 15px untuk pojok kanan atas header card */
+}
+
+.btn-block {
+    border-radius: 20px; /* Border radius 20px untuk tombol blok */
+    font-size: 1.1em; /* Ukuran font 1.1em untuk tombol blok */
+    padding: 10px; /* Padding 10px untuk tombol blok */
+}
+
+.form-control {
+    border-radius: 10px; /* Border radius 10px untuk form control */
+}
+
+.form-control-file {
+    border-radius: 5px; /* Border radius 5px untuk form control file */
+}
+
+/* Sidebar styling */
+#sidebar ul {
+    list-style: none; /* Menghapus style list */
+    padding: 0; /* Menghapus padding */
+}
+
+#sidebar ul li {
+    padding: 10px; /* Padding 10px untuk list item */
+    text-align: left; /* Teks rata kiri */
+}
+
+#sidebar ul li a {
+    color: #ffffff; /* Warna teks putih untuk link */
+    text-decoration: none; /* Menghapus dekorasi teks */
+    display: block; /* Menampilkan link sebagai blok */
+}
+
+#sidebar ul li a:hover {
+    background-color: #575757; /* Latar belakang abu-abu gelap saat diarahkan oleh kursor */
+    color: #ffffff; /* Warna teks putih saat diarahkan oleh kursor */
+}
+
+#sidebar ul li.active a {
+    background-color: #007bff; /* Latar belakang biru saat link aktif */
+    color: #ffffff; /* Warna teks putih saat link aktif */
+}
+
+#content .container {
+    max-width: 1000px; /* Lebar maksimum kontainer 1000px */
+    margin-top: 20px; /* Margin atas 20px */
+}
+
+.table th, .table td {
+    vertical-align: middle; /* Vertical align middle untuk sel tabel */
+    color: #ffffff; /* Warna teks putih untuk sel tabel */
+}
+
+/* Custom styling for icons */
+.card .card-header i,
+#sidebar ul li a i {
+    color: #808080; /* Warna ikon abu-abu */
+}
+
+.card .card-header i:hover,
+#sidebar ul li a:hover i {
+    color: #000000; /* Warna ikon hitam saat diarahkan oleh kursor */
+}

@@ -1,0 +1,72 @@
+.navbar {
+    background-color: #333; /* Mengatur warna latar belakang navbar menjadi hitam (dark grey) */
+    padding: 10px; /* Memberikan padding sebesar 10px pada navbar */
+}
+
+.navbar-brand img {
+    height: 40px; /* Mengatur tinggi gambar dalam elemen navbar-brand menjadi 40px */
+}
+
+.navbar-brand .komikgpt {
+    display: inline; /* Menampilkan elemen inline */
+    margin-left: 10px; /* Memberikan margin kiri sebesar 10px */
+    font-size: 1.5em; /* Mengatur ukuran font menjadi 1.5 kali ukuran default */
+    color: white; /* Mengatur warna teks menjadi putih */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white; /* Mengatur warna teks link menjadi putih */
+    padding: 10px 15px; /* Memberikan padding 10px di atas dan bawah, 15px di kiri dan kanan */
+    font-size: 1em; /* Mengatur ukuran font menjadi ukuran default */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #555; /* Mengatur warna latar belakang link saat di-hover menjadi dark grey */
+}
+
+/* Menambahkan gaya khusus untuk tombol navbar-toggler */
+.navbar-toggler {
+    border: none; /* Menghapus border pada tombol */
+    background-color: #f0ad4e; /* Mengatur warna latar belakang tombol menjadi oranye */
+}
+
+.navbar-toggler-icon {
+    /* Mengatur icon pada tombol toggle menggunakan SVG */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Tambahan styling untuk navbar */
+.navbar-light .navbar-toggler-icon {
+    background-color: #f0ad4e; /* Mengatur warna latar belakang icon toggle menjadi oranye */
+}
+
+/* Penyesuaian responsif */
+@media (max-width: 767px) {
+    .navbar-brand {
+        display: flex; /* Menampilkan elemen flexbox */
+        align-items: center; /* Menyelaraskan item flex di tengah secara vertikal */
+    }
+
+    .navbar-brand img {
+        height: 30px; /* Mengatur tinggi gambar dalam elemen navbar-brand menjadi 30px */
+    }
+
+    .navbar-brand .komikgpt {
+        font-size: 1.2em; /* Mengatur ukuran font menjadi 1.2 kali ukuran default */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Mengatur arah flexbox menjadi kolom */
+        align-items: flex-start; /* Menyelaraskan item flex di awal secara horizontal */
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%; /* Mengatur lebar item navbar menjadi 100% */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding: 10px; /* Memberikan padding sebesar 10px pada link */
+        width: 100%; /* Mengatur lebar link menjadi 100% */
+        text-align: left; /* Mengatur teks link menjadi rata kiri */
+    }
+}

@@ -1,0 +1,94 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Mengatur box-sizing untuk semua elemen */
+}
+
+html, body {
+    height: 100%;
+    background-color: #414141; /* Warna latar belakang abu-abu gelap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Font keluarga Arial atau sans-serif */
+}
+
+body {
+    width: 100%; /* Lebar body 100% */
+}
+
+.login-container {
+    background-color: #222; /* Warna latar belakang hitam pekat */
+    padding: 20px; /* Padding di dalam container */
+    border-radius: 10px; /* Membulatkan sudut container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Bayangan pada container */
+    max-width: 400px; /* Lebar maksimal 400px */
+    width: 100%; /* Lebar 100% */
+    text-align: center; /* Teks rata tengah */
+}
+
+h1 {
+    color: #f0ad4e; /* Warna kuning untuk header */
+    margin-bottom: 20px; /* Margin bawah 20px */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Margin bawah 15px */
+    text-align: left; /* Teks rata kiri */
+}
+
+label {
+    color: #ddd; /* Warna label abu-abu terang */
+    display: block; /* Menampilkan label sebagai blok */
+}
+
+.form-control {
+    background-color: #555; /* Warna latar belakang abu-abu gelap */
+    border: 1px solid #777; /* Border abu-abu lebih gelap */
+    color: #ddd; /* Warna teks abu-abu terang */
+    width: 100%; /* Lebar 100% */
+    padding: 10px; /* Padding 10px */
+    margin-top: 5px; /* Margin atas 5px */
+    border-radius: 5px; /* Membulatkan sudut input */
+}
+
+.form-control:focus {
+    background-color: #666; /* Warna latar belakang abu-abu lebih terang saat fokus */
+    border: 1px solid #f0ad4e; /* Border kuning saat fokus */
+    color: #ddd; /* Warna teks abu-abu terang */
+}
+
+.btn-warning {
+    background-color: #f0ad4e; /* Warna latar belakang kuning */
+    border: none; /* Tanpa border */
+    color: #222; /* Warna teks hitam pekat */
+    width: 100%; /* Lebar 100% */
+    padding: 10px; /* Padding 10px */
+    border-radius: 5px; /* Membulatkan sudut tombol */
+    margin-top: 10px; /* Margin atas 10px */
+    cursor: pointer; /* Menampilkan kursor pointer */
+}
+
+.btn-warning:hover {
+    background-color: #e99e3b; /* Warna latar belakang kuning lebih gelap saat hover */
+}
+
+.btn-secondary {
+    background-color: #444; /* Warna latar belakang abu-abu pekat */
+    border: none; /* Tanpa border */
+    color: #ddd; /* Warna teks abu-abu terang */
+    width: 48%; /* Lebar tombol register dan back 48% */
+    padding: 10px; /* Padding 10px */
+    border-radius: 5px; /* Membulatkan sudut tombol */
+    cursor: pointer; /* Menampilkan kursor pointer */
+    display: inline-block; /* Menampilkan tombol sebagai blok inline */
+}
+
+.btn-secondary:hover {
+    background-color: #555; /* Warna latar belakang abu-abu lebih terang saat hover */
+}
+
+.mt-3 {
+    margin-top: 15px; /* Margin atas 15px */
+}

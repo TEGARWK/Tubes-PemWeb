@@ -1,0 +1,159 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Mengatur model box-sizing untuk semua elemen */
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Mengatur font utama */
+    background-color: #121212; /* Warna latar belakang yang gelap */
+    color: #ddd; /* Warna teks yang lebih terang untuk kontras */
+}
+
+.container {
+    margin-top: 30px; /* Margin atas */
+    flex: 1; /* Flex-grow untuk mengisi sisa tinggi halaman */
+}
+
+.text-warning {
+    color: #f0ad4e !important; /* Warna kuning dengan prioritas tinggi */
+}
+
+.manga-container {
+    overflow-y: auto; /* Scroll vertikal jika konten melebihi batas */
+    max-height: 500px; /* Batas maksimum tinggi */
+}
+
+.manga-cover {
+    width: 100%; /* Menyesuaikan lebar gambar dengan kolom */
+    max-width: 300px; /* Batas maksimum lebar gambar */
+    max-height: 450px; /* Batas maksimum tinggi gambar */
+    height: auto; /* Tinggi otomatis untuk menjaga rasio aspek */
+    object-fit: cover; /* Mengatur gambar agar sesuai dengan kotak */
+    margin-bottom: 20px; /* Jarak bawah gambar */
+    display: block; /* Menampilkan sebagai blok */
+    margin-left: auto; /* Pusatkan gambar secara horizontal */
+    margin-right: auto; /* Pusatkan gambar secara horizontal */
+}
+
+.details-content {
+    display: flex; /* Flexbox untuk tata letak */
+    flex-direction: column; /* Flex arah kolom */
+}
+
+.details-content p {
+    margin-bottom: 10px; /* Mengatur jarak antar paragraf */
+}
+
+.chapter-box {
+    max-height: 200px; /* Batas maksimum tinggi box chapter */
+    overflow-y: auto; /* Scroll vertikal jika konten melebihi batas */
+    border: 1px solid #f0ad4e; /* Border kuning di sekitar box chapter */
+    padding: 10px; /* Padding dalam */
+    background-color: #222; /* Warna latar belakang box chapter */
+    margin-top: 15px; /* Menambahkan jarak antara teks dan kotak chapter */
+}
+
+.chapter-item {
+    margin-bottom: 10px; /* Margin bawah */
+}
+
+.chapter-item a {
+    color: #f0ad4e; /* Warna link untuk chapter */
+    text-decoration: none; /* Menghilangkan garis bawah teks */
+}
+
+.chapter-item a:hover {
+    text-decoration: underline; /* Garis bawah teks saat dihover */
+}
+
+.rating {
+    direction: rtl; /* Arah teks dari kanan ke kiri */
+    unicode-bidi: bidi-override; /* Mengatur arah teks */
+    text-align: center; /* Teks rata tengah */
+}
+
+.rating > label {
+    color: #ddd; /* Warna label */
+    font-size: 2em; /* Ukuran font */
+    padding: 0; /* Padding */
+    cursor: pointer; /* Tampilkan pointer saat dihover */
+}
+
+.rating > input {
+    display: none; /* Sembunyikan input radio */
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+    color: gold; /* Warna emas untuk label yang dipilih */
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label {
+    color: gold; /* Warna emas untuk label saat dihover */
+}
+
+html, body {
+    display: flex; /* Flexbox untuk tata letak */
+    flex-direction: column; /* Flex arah kolom */
+    min-height: 100vh; /* Tinggi minimum 100% viewport */
+}
+
+.footer {
+    background-color: #222; /* Warna latar belakang */
+    padding: 10px; /* Padding dalam */
+    color: #ddd; /* Warna teks */
+    text-align: center; /* Teks rata tengah */
+    margin-top: auto; /* Posisi di bagian bawah halaman */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .navbar-brand {
+        display: flex; /* Flexbox untuk tata letak */
+        flex-direction: column; /* Flex arah kolom */
+        align-items: center; /* Pusatkan konten secara horizontal */
+    }
+
+    .navbar-brand img {
+        width: 50px; /* Lebar gambar */
+        height: auto; /* Tinggi otomatis untuk menjaga rasio aspek */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Flex arah kolom */
+        text-align: center; /* Teks rata tengah */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; /* Margin bawah */
+    }
+
+    .container {
+        margin-top: 20px; /* Margin atas */
+        padding: 10px; /* Padding dalam */
+    }
+
+    .manga-cover {
+        max-width: 100%; /* Lebar penuh */
+        max-height: none; /* Tinggi otomatis */
+    }
+
+    .details-content {
+        margin-top: 20px; /* Margin atas */
+    }
+
+    .chapter-box {
+        max-height: none; /* Tinggi otomatis */
+        margin-top: 10px; /* Margin atas */
+    }
+
+    .comment-section form input,
+    .comment-section form textarea {
+        width: 100%; /* Lebar penuh */
+    }
+}

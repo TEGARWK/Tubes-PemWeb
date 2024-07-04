@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif; /* Mengatur font menjadi Arial atau sans-serif jika Arial tidak tersedia */
+    background-color: #1a1a1a; /* Mengatur latar belakang menjadi warna gelap */
+    color: #ffffff; /* Mengatur warna teks menjadi putih */
+    margin: 0; /* Menghapus margin default */
+    padding: 0; /* Menghapus padding default */
+}
+
+.container {
+    padding-top: 20px; /* Menambahkan padding atas sebesar 20px */
+    padding-bottom: 20px; /* Menambahkan padding bawah sebesar 20px */
+}
+
+h1 {
+    font-size: 2.5rem; /* Mengatur ukuran font menjadi 2.5 rem */
+    font-weight: bold; /* Mengatur font menjadi tebal */
+    margin-bottom: 20px; /* Menambahkan margin bawah sebesar 20px */
+    text-align: center; /* Mengatur teks menjadi rata tengah */
+}
+
+.pdf-container {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    flex-direction: column; /* Mengatur elemen di dalamnya menjadi kolom */
+    align-items: center; /* Menjajarkan elemen secara horizontal ke tengah */
+    height: 100vh; /* Mengatur tinggi kontainer menjadi 100% dari tinggi viewport */
+    overflow-y: auto; /* Menambahkan scroll vertikal jika konten melebihi tinggi kontainer */
+    border: 1px solid #ccc; /* Menambahkan border abu-abu */
+    padding: 10px; /* Menambahkan padding sebesar 10px */
+    background-color: #ffffff; /* Mengatur latar belakang menjadi putih */
+    color: #000000; /* Mengatur warna teks menjadi hitam */
+    margin: 0 auto; /* Mengatur margin otomatis untuk menengahkan elemen secara horizontal */
+}
+
+#pdf-viewer {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    flex-direction: column; /* Mengatur elemen di dalamnya menjadi kolom */
+    align-items: center; /* Menjajarkan elemen secara horizontal ke tengah */
+    width: 100%; /* Mengatur lebar elemen menjadi 100% */
+}
+
+#pdf-viewer canvas {
+    margin-bottom: 20px; /* Menambahkan margin bawah sebesar 20px untuk elemen canvas */
+}
+
+.footer {
+    background-color: #333; /* Mengatur latar belakang footer menjadi warna abu-abu gelap */
+    color: white; /* Mengatur warna teks menjadi putih */
+    padding: 20px 0; /* Menambahkan padding atas dan bawah sebesar 20px */
+    text-align: center; /* Mengatur teks menjadi rata tengah */
+}
+
+.footer p {
+    margin: 0; /* Menghapus margin default untuk paragraf dalam footer */
+}
